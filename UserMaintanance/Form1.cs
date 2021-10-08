@@ -29,10 +29,18 @@ namespace UserMaintanance
         {
             var u = new User()
             {
-                LastName = textBox1.Text,
-                FirstName = textBox2.Text
+                FullName = textBox1.Text
+                
             };
             users.Add(u);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.InitialDirectory = @"C:\";
+            save.RestoreDirectory = true;
+            save.DefaultExt = "csv";
         }
     }
 }

@@ -34,5 +34,13 @@ namespace UserMaintanance
             };
             users.Add(u);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.InitialDirectory = @"C:\";
+            save.RestoreDirectory = true;
+            save.DefaultExt = "csv";
+        }
     }
 }

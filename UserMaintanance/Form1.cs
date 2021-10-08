@@ -42,5 +42,10 @@ namespace UserMaintanance
             save.RestoreDirectory = true;
             save.DefaultExt = "csv";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.RemoveAt(0);
+        }
     }
 }

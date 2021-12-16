@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace MicroSimExample
 {
+    
     public partial class Form1 : Form
     {
+        List<Person>
         public Form1()
         {
             InitializeComponent();
